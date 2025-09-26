@@ -1,91 +1,18 @@
-body{
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: black;
-}
-.contenedor{
-  perspective: 250px;
-  width: 300px;
-  height: 150px;
-  position: relative;
-}
-.tarjeta{
-  width: 50px;
-  height: 100px;
-  background-color: aliceblue;
-  font-size: 10px;
-  position: absolute;
-  top: 35px;
-  left: 125px;
-  border-radius: 9px;
-  text-align: center;
-  cursor: pointer;
-  animation: Carrusel 10s linear infinite;
-}
-@keyframes Carrusel{
-  from{
-      transform: rotateY(360deg) translateZ(100px);
-      z-index: 10;
-      opacity: 0.9;
-  }
-  50%{
-      z-index: -10;
-  }
-  to{
-      transform: rotateX(0deg) translateZ(100px);
-  }
-}
-#imagen1{
-  background-image: url(img/imagen1.jpeg);
-  background-size: cover;
-  background-position: center;
-  animation-delay: -1s;
-}
-#imagen1:hover{
-  box-shadow: 0px 0px 10px rgb(255, 255, 255);
-}
-#imagen2{
-  background-image: url(img/imagen2.jpg);
-  background-size: cover;
-  background-position: center;
-  animation-delay: -3s;
-}
-#imagen2:hover{
-  box-shadow: 0px 0px 10px rgb(255, 255, 255);
-}
-#imagen3{
-  background-image: url(img/imagen3.jpg);
-  background-size: cover;
-  background-position: center;
-  animation-delay: -5s;
-}
-#imagen3:hover{
-  box-shadow: 0px 0px 10px rgb(255, 255, 255);
-}
-#imagen4{
-  background-image: url(img/imagen4.jpg);
-  background-size: cover;
-  background-position: center;
-  animation-delay: -7s;
-}
-#imagen4:hover{
-  box-shadow: 0px 0px 10px rgb(255, 255, 255);
-}
-#imagen5{
-  background-image: url(img/imagen5.jpg);
-  background-size: cover;
-  background-position: center;
-  animation-delay: -9s;
-}
-#imagen5:hover{
-  box-shadow: 0px 0px 10px rgb(255, 255, 255);
-}
-.tarjeta h3{
-  color: black;
-  font-size: 3px; 
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  margin-top: 70px;
-  background-color: black;
-}
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Ejemplo de HTML5">
+            <title>Carrusel</title>
+        <link rel="stylesheet" href="estilo.css">
+    </head>
+    <body>
+    <div class="contenedor">
+        <div class="tarjeta" id="imagen1"<h3>Jack Rossel</h3></div>
+        <div class="tarjeta" id="imagen2"<h3>Chihuahua</h3></div>
+        <div class="tarjeta" id="imagen3"<h3>Golden Retriver</h3></div>
+        <div class="tarjeta" id="imagen4"<h3>Cocker Spaniel Ingles</h3></div>
+        <div class="tarjeta" id="imagen5"<h3>Beagle</h3></div>
+    </div>
+</body>
+</html>
